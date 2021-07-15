@@ -1,5 +1,11 @@
 from django.db import models as foo_models
+from attr import attrs, attrib
 
+
+@attrs
+class AnotherAttribDataModel:
+    a = attrib()
+    b = attrib()
 
 
 class NotDataModel:
